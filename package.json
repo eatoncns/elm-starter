@@ -1,0 +1,24 @@
+{
+  "name": "auth-test",
+  "version": "1.0.0",
+  "description": "Elm auth0 test app",
+  "main": "index.js",
+  "author": "Philip Meier <philip.meier06@googlemail.com>",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "yarn install && elm-package install -y && cd tests && elm-package install -y",
+    "build": "webpack",
+    "build-watch": "webpack --watch",
+    "dev": "webpack-dev-server --port 3000",
+    "test": "elm-test",
+    "watch": "elm-test --watch"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "elm-webpack-loader": "^4.4.0",
+    "file-loader": "^1.1.5",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
